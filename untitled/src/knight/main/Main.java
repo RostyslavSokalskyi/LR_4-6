@@ -17,6 +17,8 @@ public class Main {
         Command sortCommand = new SortByWeightCommand(ammunitionList);
         Command defineHierarchyCommand = new DefineHierarchyCommand(ammunitionList);
         Command calculateCostCommand = new CalculateCostCommand(ammunitionList);
+        Command saveToFileCommand = new SaveToFileCommand(ammunitionList);
+        Command helpCommand = new HelpCommand();
 
         Menu menu = new Menu();
         menu.addCommand("Екіпірувати", equipCommand);
@@ -25,6 +27,8 @@ public class Main {
         menu.addCommand("Визначити ієрархію", defineHierarchyCommand);
         menu.addCommand("Розрахувати загальну вартість", calculateCostCommand);
         menu.addInfoCommand("Інформація про амуніцію", ammunitionList);
+        menu.addCommand("Завантажити з файлу", saveToFileCommand); // Додана нова команда
+        menu.addCommand("Довідка", helpCommand);
         menu.addExitCommand("Вийти");
 
         menu.display();
