@@ -4,6 +4,7 @@ import knight.ammunition.Ammunition;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Knight {
     private String name;
     private List<Ammunition> equippedAmmunition; // список амуніції, якою споряджений лицар

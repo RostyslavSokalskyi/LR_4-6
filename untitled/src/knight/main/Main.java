@@ -27,7 +27,7 @@ public class Main {
         menu.addCommand("Визначити ієрархію", defineHierarchyCommand);
         menu.addCommand("Розрахувати загальну вартість", calculateCostCommand);
         menu.addInfoCommand("Інформація про амуніцію", ammunitionList);
-        menu.addCommand("Завантажити з файлу", saveToFileCommand); // Додана нова команда
+        menu.addCommand("Завантажити у файл", saveToFileCommand); // Додана нова команда
         menu.addCommand("Довідка", helpCommand);
         menu.addExitCommand("Вийти");
 

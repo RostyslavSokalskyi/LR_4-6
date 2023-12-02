@@ -22,7 +22,7 @@ public class SaveToFileCommand implements Command {
         }
 
         try {
-            PrintStream ps = new PrintStream(new File("C:\\Users\\Rostyslav\\OneDrive\\Desktop\\AmmunitionList.txt"));
+            PrintStream ps = new PrintStream(new File("C:\\Users\\Admin\\Desktop\\AmmunitionList.txt"));
             PrintStream standard = System.out;
             System.setOut(ps);
             ps.print(record.toString());
